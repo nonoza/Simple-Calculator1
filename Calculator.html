@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript">
+		//Function for inseting a value
+		
+		function insert(num){
+			document.calc.textview.value=document.calc.textview.value+num;
+		}
+		//Function to calculate the total
+		function total(num2){
+		document.calc.textview.value=eval(document.calc.textview.value);
+		}
+		//Function to clear
+		function c(){
+		document.calc.textview.value="";
+		}
+	</script>
+	<style type="text/css">
+
+	body{
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color:#003366;
+	}
+
+		form{
+			top:50%;
+			left: 50%;
+			transform:translateX(-50%)translateY(-50%);
+			position: absolute;
+			background-color: #3d4543;
+			box-shadow: 1px solid #000;
+			border-radius: 10px;
+			width: 200px;
+			height: 250px;
+			padding: 5px;
+		
+		}
+		form  .txt{
+			background-color: #222;
+			width:220px;position: relative;
+			left:15px;
+			top:20px;
+			height:30px;
+			width: 180px;
+			border-radius: 5px;
+			border:none;
+			position: absolute;
+			padding: 2px;
+			color: #fff;
+
+		}
+		
+		 .button2{
+			width: 40px;
+			height:40px;
+			font-size:15px;
+			background-color: #000;
+			border:1px solid rgba(0.7);
+			padding: 15px;
+			color: #fff;
+			text-align: center;
+			left:50%;
+			top:50%;
+             
+		}
+		.button3{
+			left:10%;
+			top:50%;
+			text-align: center;
+			padding: 14px;
+		}
+		h2{
+			text-align: center;
+			font-family:Arial;
+			color: #fff;
+			font-family: 'Oxygen', sans-serif;
+			font-size: 20px;
+
+		}
+	</style>
+	<title>Calculator</title>
+</head>
+<body>
+	<h2>SIMPLE CALCULATOR</h2>
+	<br>
+	<br>
+ <form name="calc" class="form1">
+ 	<input name="textview" class="txt">
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<div class ="button3">
+ 	<input type="button" name="btn1" value="1" class="button2"onclick="insert(btn1.value)">
+ 	<input type="button" name="btn2" value="2" class="button2" onclick="insert(btn2.value)">
+ 	<input type="button" name="btn3" value="3" class="button2"onclick="insert(btn3.value)">
+ 	<input type="button" name="btnplus" value="+" class="button2"onclick="insert(btnplus.value)">
+ 	<br>
+ 	<input type="button" name="btn4" value="4" class="button2"onclick="insert(btn4.value)">
+ 	<input type="button" name="btn5" value="5" class="button2"
+ 	onclick="insert(btn5.value)">
+ 	<input type="button" name="btn6" value="6" class="button2"
+ 	onclick="insert(btn6.value)">
+ 	<input type="button" name="btnsub" value="-" class="button2"
+ 	onclick="insert(btnsub.value)">
+
+ 	<br>
+ 	<input type="button" name="btn7" value="7" class="button2"onclick="insert(btn7.value)">
+ 	<input type="button" name="btn8" value="8" class="button2"
+ 	onclick="insert(btn8.value)">
+ 	<input type="button" name="btn9" value="9" class="button2"
+ 	onclick="insert(btn9.value)">
+ 	<input type="button" name="btndiv" value="/" class="button2"onclick="insert(btndiv.value)">
+
+
+ 	<br>
+ 	<input type="button" name ="btn0" value="0" class="button2"onclick="insert(btn0.value)">
+ 	<input type="button" name ="btnclear" value="C" class="button2" onclick ="c()">
+ 	<input type="button" name ="btnequal" class="button2" value="=" onclick="total(value)">
+ 	<input type="button" name="btnmul" value="*" class="button2"onclick="insert(btnmul.value)">
+ </div>
+ </form>
+</body>
+</html>
